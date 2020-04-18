@@ -205,7 +205,7 @@
 
     #content {
     	width: 100%;
-    	padding: 20px;
+    	padding: 0;
     	min-height: 100vh;
     	transition: all 0.3s;
     	position: absolute;
@@ -215,7 +215,7 @@
 
     #sidebarCollapse{
     	position: fixed;
-    	top: 5%;
+    	top: 12%;
     	left:0;
     	transform: translateY(-50%);
     	transition: all 0.3s;
@@ -274,14 +274,11 @@
 	<div id="content">
 
 		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-			<div class="container-fluid">
-
 
 				<!-- 	</nav> -->
 				<div class="pdfViewer">
-					<iframe src="<?=base_url()?>/pdfviewer/web/viewer.html?file=../../pdfs/2.pdf" style="height:95vh; width:100%; display: none;"></iframe>
+					<iframe src="<?=base_url()?>/pdfviewer/web/viewer.html?file=../../pdfs/2.pdf" style="min-height:100vh; width:100%; display: none;"></iframe>
 				</div>
-			</div>
 		</div>
 
 		<div class="overlay"></div>
