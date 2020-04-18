@@ -38,4 +38,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('graph',$GraphData);
 	}
 
+	public function pdfviewer(){
+		$this->load->helper('url');
+		$this->load->helper('directory');
+		$data['pdfs'] = directory_map('./pdfs');
+		$this->load->view('viewer',$data);
+	}
+
 }
