@@ -72,12 +72,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql239.main-hosting.eu',
-	'username' => 'u924240733_itpl9',
-	'password' => 'KutjzOjNK9/V#fQbJ>',
-	'database' => 'u924240733_test',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'cbir',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -91,6 +92,5 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE,
-	'db_debug' => FALSE,
+	'save_queries' => TRUE
 );
